@@ -2,7 +2,7 @@
 
 # Check if a file is provided
 if [ $# -ne 1 ]; then
-    echo "Usage: $0 sample.txt"
+    echo "Usage:   $0 sample.txt"
     exit 1
 fi
 
@@ -23,7 +23,7 @@ awk '
 END {
     for (i = 1; i <= NF; i++) {
         for (j = 1; j <= NR; j++) {
-            printf "%s ", a[i,   j]
+            printf "%s ", a[i, j]
         }
         print "  "
     }
