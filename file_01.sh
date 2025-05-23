@@ -2,7 +2,7 @@
 
 # Check if a file is provided
 if [ $# -ne 1 ]; then
-    echo "Usage:   $0 sample.txt"
+    echo "Usage:   $0 sample123.txt"
     exit 1
 fi
 
