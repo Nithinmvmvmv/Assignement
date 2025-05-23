@@ -1,10 +1,6 @@
 #!/bin/bash
 
-echo "Hi,Welcome"
-
-#!/bin/bash
-
-# Check if a file is provided as an argument
+# Check if a file is provided
 if [ $# -ne 1 ]; then
     echo "Usage: $0 sample.txt"
     exit 1
@@ -12,5 +8,25 @@ fi
 
 FILE=$1
 
-# Process the file: extract words, sort them, count occurrences, sort by frequency, and display the top 5
-cat "$FILE" | tr -cs 'A-Za-z' '\n' | tr 'A-Z' 'a-z' | sort | uniq -c | sort -nr | head -5
+# Transpose the content using awk
+
+#awk reads the file line by line.
+#Stores values in an array indexed by column and row.
+#After processing all rows, it prints the transposed content.
+
+awk '
+{
+    for (i = 1; i <= NF; i++) {
+        a[i, NR] = $i
+    }
+}
+END {
+    for (i = 1; i <= NF; i++) {
+        for (j = 1; j <= NR; j++) {
+            printf "%s ", a[i, j]
+        }
+        print ""
+    }
+}
+' "$FILE"
+
