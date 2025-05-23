@@ -23,7 +23,7 @@ awk '
 END {
     for (i = 1; i <= NF; i++) {
         for (j = 1; j <= NR; j++) {
-            printf "%s ", a[i, j]
+            printf "%s ", a[i,   j]
         }
         print "  "
     }
