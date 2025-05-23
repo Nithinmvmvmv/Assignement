@@ -1,0 +1,4 @@
+Hello world! This is a test file.
+Hello again, world. Testing testing 123.
+This file contains words, repeated words.
+Words are counted, and the most frequent words appear.
