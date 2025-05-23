@@ -25,7 +25,7 @@ END {
         for (j = 1; j <= NR; j++) {
             printf "%s ", a[i, j]
         }
-        print ""
+        print "  "
     }
 }
 ' "$FILE"
