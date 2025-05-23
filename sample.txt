@@ -1,8 +1,8 @@
-name age
-alice 21
-ryan 30
-nithin 28
+name    age
+alice   21
+ryan    30
+nithin  28
 bharath 30
-shiva 45
-muthuu 27
-raj 26
+shiva   45
+muthuu  27
+raj     26
