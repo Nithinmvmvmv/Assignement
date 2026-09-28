@@ -1,0 +1,6 @@
+cat >> Filesystem      Size  Used Avail Use% Mounted on
+/dev/xvda1       50G   42G  8.0G  84% /
+tmpfs            3.8G     0  3.8G   0% /dev/shm
+/dev/xvdb1      100G   65G   35G  65% /data
+/dev/xvdc1       20G   18G  2.0G  90% /var
+/dev/nvme0n1p1   30G   12G   18G  40% /home
